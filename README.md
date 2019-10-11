@@ -23,3 +23,7 @@ I'm doing this to keep up with the coding, not to build the best DS ever. We'll 
 * `chore` commits (unless I'm doing some crazy magic I'm proud of 🤴🏽).
 * `docs` commits (unless if they help the development and the "open-sourcesness". For example, saying how to run the project, components docs or explaining the rules 😉).
 * Moving files from one place to another.
+
+# Todo
+- [ ] Check https://github.com/proksh/atomize. They have a cool way of setting default style values (kinda complicated but aligned with my thought process).
+- [ ] Keep adding love to the `Alert` component.
