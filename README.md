@@ -26,4 +26,5 @@ I'm doing this to keep up with the coding, not to build the best DS ever. We'll 
 
 # Todo
 - [ ] Check https://github.com/proksh/atomize. They have a cool way of setting default style values (kinda complicated but aligned with my thought process).
-- [ ] Keep adding love to the `Alert` component.
+- [ ] Add tests to the new component.
+- [ ] Refactor/Keep adding love to the `Alert` component.
