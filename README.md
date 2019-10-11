@@ -14,3 +14,12 @@ None
 # Structure
 None!
 I'm doing this to keep up with the coding, not to build the best DS ever. We'll see how it goes...
+
+
+# Rules
+
+## Things that don't count as part of the challenge
+
+* `chore` commits (unless I'm doing some crazy magic I'm proud of 🤴🏽).
+* `docs` commits (unless if they help the development and the "open-sourcesness". For example, saying how to run the project, components docs or explaining the rules 😉).
+* Moving files from one place to another.
