@@ -24,7 +24,10 @@ I'm doing this to keep up with the coding, not to build the best DS ever. We'll 
 * `docs` commits (unless if they help the development and the "open-sourcesness". For example, saying how to run the project, components docs or explaining the rules 😉).
 * Moving files from one place to another.
 
-# Todo
+## Notes
 - [ ] Check https://github.com/proksh/atomize. They have a cool way of setting default style values (kinda complicated but aligned with my thought process).
-- [ ] Add tests to the new component.
+
+# Todo
+- [x] Add tests to the new component.
+- [ ] Add dismissable alert functionality
 - [ ] Refactor/Keep adding love to the `Alert` component.
