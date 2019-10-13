@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const defaultProps = {
@@ -19,10 +19,23 @@ const Styled = styled.div`
     border-color: ${props => props.borderColor || defaultProps.borderColor};
 `;
 
-const Alert = ({ message, ...props }) => (
-    <Styled {...props}>
-        <p>{message}</p>
-    </Styled>
-);
+const Dismiss = styled.button`
+    position: relative;
+    padding: 0.75rem;
+    color: 'black';
+`;
+
+const Alert = ({ dismissable = false, message, ...props }) => {
+    const [dismissed, setDismiss] = useState(false);
+    const dismissAlert = () => setDismiss(true);
+    return (
+        <React.Fragment>
+            {!dismissed && <Styled {...props}>
+                <p>{message}</p>
+                {dismissable && <Dismiss onClick={dismissAlert} data-testid="dismiss-button" />}
+            </Styled>}
+        </React.Fragment>
+    );
+};
 
 export default Alert;
