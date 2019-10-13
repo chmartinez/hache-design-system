@@ -29,5 +29,6 @@ I'm doing this to keep up with the coding, not to build the best DS ever. We'll 
 
 # Todo
 - [x] Add tests to the new component.
-- [ ] Add dismissable alert functionality
-- [ ] Refactor/Keep adding love to the `Alert` component.
+- [x] Add dismissable alert functionality.
+- [ ] Add styles to alert.
+- [ ] Refactor/Add love to the `Alert` component.
