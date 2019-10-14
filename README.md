@@ -31,4 +31,6 @@ I'm doing this to keep up with the coding, not to build the best DS ever. We'll 
 - [x] Add tests to the new component.
 - [x] Add dismissable alert functionality.
 - [ ] Add styles to alert.
+- [ ] Add `onDismiss` callback.
+- [ ] Find out how to setup aliases within a create-react-app (probably will imply VSCode changes) .
 - [ ] Refactor/Add love to the `Alert` component.
