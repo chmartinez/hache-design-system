@@ -1,41 +1,39 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { color } from '../../style';
 
 const defaultProps = {
-    backgroundColor: 'blue',
-    borderColor: 'red',
-    color: 'white'
+    backgroundColor: color.BLUE,
+    borderColor: color.RED,
+    color: color.WHITE,
 };
 
-const Styled = styled.div`
-    position: relative;
-    padding: .75rem 1.25rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid transparent;
-    border-radius: .375rem;
-
-    color: ${props => props.color || defaultProps.color};
+const Container = styled.div`
     background-color: ${props => props.backgroundColor || defaultProps.backgroundColor};
     border-color: ${props => props.borderColor || defaultProps.borderColor};
+    border-radius: .375rem;
+    border: 1px solid transparent;
+    color: ${props => props.color || defaultProps.color};
+    margin-bottom: 1.5rem;
+    padding: .75rem 1.25rem;
+    position: relative;
 `;
 
 const Dismiss = styled.button`
-    position: relative;
+    color: ${color.BLACK};
     padding: 0.75rem;
-    color: 'black';
+    position: relative;
 `;
 
 const Alert = ({ dismissable = false, message, ...props }) => {
     const [dismissed, setDismiss] = useState(false);
     const dismissAlert = () => setDismiss(true);
-    return (
-        <React.Fragment>
-            {!dismissed && <Styled {...props}>
-                <p>{message}</p>
-                {dismissable && <Dismiss onClick={dismissAlert} data-testid="dismiss-button" />}
-            </Styled>}
-        </React.Fragment>
-    );
+    if (dismissed) return null;
+
+    return <Container {...props}>
+        <p>{message}</p>
+        {dismissable && <Dismiss onClick={dismissAlert} data-testid="dismiss-button" />}
+    </Container>;
 };
 
 export default Alert;
