@@ -33,6 +33,7 @@ const Container = styled.div`
     
     border-radius: ${size.radius};
     border: ${size.border} solid transparent;
+    display: flex;
     margin-bottom: ${size.margin.medium};
     padding: ${size.padding.small} ${size.padding.medium};
     position: relative;
@@ -44,13 +45,20 @@ const Dismiss = styled.button`
     /* Prop drill issue */
     color: ${props => getCSSRulesForAlert(props.variation).dismissColor};
     cursor: pointer;
+    margin-left: auto;
     opacity: 0.5;
     padding: ${size.padding.small};
     position: relative;
 
+    &:focus, &:hover {
+        opacity: 0.75;
+        outline: none;
+    }
+
     &::after {
         /* might not work on older browsers. Structure is not explicit at component level */
         content: 'X';
+        font-size: ${size.atom.val()};
         font-weight: 900;
     }
 `;
