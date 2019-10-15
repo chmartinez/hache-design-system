@@ -12,11 +12,14 @@ function App() {
                     <Alert
                         dismissable
                         message="More than alert, this looks like a bubble with info in it, right?"
+                        />
+                    <Alert
+                        variation="warning"
+                        message="Support different variations, from warnings..."
                     />
                     <Alert
-                        backgroundColor="red"
-                        color="green"
-                        message="I'm not blue. I'm a red with green"
+                        variation="error"
+                        message="To errors..."
                     />
                 </div>
             </section>
