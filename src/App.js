@@ -12,7 +12,7 @@ function App() {
                     <Alert
                         dismissable
                         message="More than alert, this looks like a bubble with info in it, right?"
-                        />
+                    />
                     <Alert
                         variation="warning"
                         message="Support different variations, from warnings..."
@@ -21,6 +21,21 @@ function App() {
                         variation="error"
                         message="To errors..."
                     />
+                    <Alert
+                        dismissable>
+                        <div>
+                            <h4>Hey! Don't touch this!</h4>
+                            <p>An alert means something weird happen. Pay attention to this!</p>
+                        </div>
+                    </Alert>
+                    <Alert
+                        dismissable
+                        variation="warning">
+                        <Alert
+                            dismissable
+                            message="Alert-ception (use it on your own risk)"
+                            variation="error" />
+                    </Alert>
                 </div>
             </section>
         </div>

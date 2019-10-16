@@ -34,6 +34,7 @@ const Container = styled.div`
     border-radius: ${size.radius};
     border: ${size.border} solid transparent;
     display: flex;
+    flex: 1;
     margin-bottom: ${size.margin.medium};
     padding: ${size.padding.small} ${size.padding.medium};
     position: relative;
@@ -63,13 +64,13 @@ const Dismiss = styled.button`
     }
 `;
 
-const Alert = ({ dismissable = false, message, ...props }) => {
-    const [dismissed, setDismiss] = useState(false);
-    const dismissAlert = () => setDismiss(true);
-    if (dismissed) return null;
+const Alert = ({ children, dismissable = false, message, ...props }) => {
+    const [isVisible, setIsVisible] = useState(true);
+    const dismissAlert = () => setIsVisible(false);
+    if (!isVisible) return null;
 
     return <Container {...props} data-testid="alert">
-        <p>{message}</p>
+        {children || <p>{message}</p>}
         {dismissable && <Dismiss {...props} onClick={dismissAlert} data-testid="dismiss-button" />}
     </Container>;
 };
