@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { color, size } from '../../style';
+import { color, size } from 'style';
 
 const ALERT_VARIATIONS = {
     default: {
