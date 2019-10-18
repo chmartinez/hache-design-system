@@ -1,7 +1,7 @@
 # THE CHALLENGE 
 
 The idea is simple: now that I'm acting as a PO, I spent less time coding and more time finding problems. BUT, since I don't want to stay away from code, I come up with this idea of #tenLinesOfCodePerDay.
-With this repo, the idea is to start adding components, based on https://dashkit.goodthemes.co/components.html. Ten lines of code at a time.
+With this repo, the idea is to start adding components, based on design system styleguide of my choice. Ten lines of code at a time.
 
 
 ## Restrictions
