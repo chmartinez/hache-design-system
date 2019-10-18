@@ -1,4 +1,4 @@
-import * as color from './color';
+import * as colors from './color';
 import * as size from './size';
 
-export { color, size };
+export { colors, size };

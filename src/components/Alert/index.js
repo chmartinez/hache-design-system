@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { color, size } from 'style';
+import { colors, size } from 'style';
 
 const ALERT_VARIATIONS = {
     default: {
-        background: color.BLUE,
-        border: color.BLUE,
-        dismissColor: color.WHITE,
-        fontColor: color.WHITE,
+        background: colors.blue1,
+        border: colors.blue3,
+        dismissColor: colors.grey,
+        fontColor: colors.black,
     },
     error: {
-        background: color.RED,
-        border: color.RED,
-        dismissColor: color.WHITE,
-        fontColor: color.WHITE,
+        background: colors.red1,
+        border: colors.red3,
+        dismissColor: colors.grey,
+        fontColor: colors.black,
     },
     warning: {
-        background: color.WARNING,
-        border: color.WARNING,
-        dismissColor: color.BLACK,
-        fontColor: color.DARK_BLUE,
+        background: colors.yellow1,
+        border: colors.yellow3,
+        dismissColor: colors.grey,
+        fontColor: colors.defaultFontColor,
     },
 };
 
@@ -28,11 +28,10 @@ const getCSSRulesForAlert = (variation) => ALERT_VARIATIONS[variation] || ALERT_
 const Container = styled.div`
     /* Alert variation props */
     background-color: ${props => getCSSRulesForAlert(props.variation).background};
-    border-color: ${props => getCSSRulesForAlert(props.variation).border};
+    border: ${size.border} solid ${props => getCSSRulesForAlert(props.variation).border};
     color: ${props => getCSSRulesForAlert(props.variation).fontColor};
     
     border-radius: ${size.radius};
-    border: ${size.border} solid transparent;
     display: flex;
     flex: 1;
     margin-bottom: ${size.margin.medium};
