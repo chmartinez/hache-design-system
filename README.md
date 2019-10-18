@@ -52,7 +52,7 @@ That should allow VSCode to detect the folders inside `src` as "aliases" (so you
 - [x] (Alert) Add support for custom content
 - [x] Find out how to setup aliases within a create-react-app (probably will imply VSCode changes) .
 - [x] Add documentation for `Alert` component.
-- [ ] Set color palette based on ant.design.
+- [x] Set color palette based on ant.design.
 - [ ] Set Icons.
 - [ ] Adapt `Alert` to new design system.
 
