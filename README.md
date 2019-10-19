@@ -54,6 +54,7 @@ That should allow VSCode to detect the folders inside `src` as "aliases" (so you
 - [x] Find out how to setup aliases within a create-react-app (probably will imply VSCode changes) .
 - [x] Add documentation for `Alert` component.
 - [x] Set color palette based on ant.design.
-- [ ] Set Icons.
+- [x] Set Icons.
+- [ ] Complete TODO's in [Icons](src/components/Icon/index.md).
 - [ ] Adapt `Alert` to new design system.
 
