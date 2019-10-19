@@ -10,6 +10,7 @@ Style guide at https://www.figma.com/file/JltJT3Uda92nX1yiiCYBOG/Ant-Design-Syst
 
 ## Components 
 - [Alert](src/components/Alert/index.md)
+- [Icon](src/components/Icon/index.md)
 
 
 ## Notes
