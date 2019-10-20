@@ -15,8 +15,14 @@ This component "appeared" in my list after my 1st attempt with the [Alert compon
 * It should be scaled according to the text size. For example, icons inline with 12pt font should be 12px in size with 8px of spacing.
 * It should allow color configuration
 
+
+### Notes
+* Using icons from https://github.com/ant-design/ant-design-icons/tree/master/packages/icons/svg.
+
 ## TODO
 - [x] Setup icon folder.
 - [x] Test svg support
+- [x] Test != icon support
 - [ ] Test dynamic size support.
 - [ ] Test color support.
+- [ ] Once finished, add static typing check (Flow)

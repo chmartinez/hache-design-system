@@ -1,9 +1,6 @@
 import React from 'react';
+import InternalIcon from './icons-supported';
 
-const Icon = () => (
-    <i>
-        <svg></svg>
-    </i>
-);
+const Icon = (props) => (<i><InternalIcon {...props} /></i>);
 
 export default Icon;
